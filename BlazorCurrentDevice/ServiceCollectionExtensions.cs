@@ -3,7 +3,7 @@ using Microsoft.JSInterop;
 
 namespace BlazorCurrentDevice
 {
-    public static class BlazorCurrentDeviceExtensions
+    public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddBlazorCurrentDevice(this IServiceCollection services)
         {

@@ -7,9 +7,9 @@
     <PackageProjectUrl>https://github.com/arivera12/BlazorCurrentDevice</PackageProjectUrl>
     <RepositoryUrl>https://github.com/arivera12/BlazorCurrentDevice</RepositoryUrl>
     <RepositoryType>C#</RepositoryType>
-    <PackageReleaseNotes>Added missing method Desktop. Fixed properties methods.</PackageReleaseNotes>
+    <PackageReleaseNotes>Renamed BlazorCurrentDeviceExtensions to ServiceCollectionExtensions.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
 
