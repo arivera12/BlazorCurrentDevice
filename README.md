@@ -5,17 +5,17 @@ This is a wrapper around current-device.js
 
 ## Installation
 
-`Install-Package BlazorCurrentDevice -Version 1.0.1`
+`Install-Package BlazorCurrentDevice -Version 1.0.2`
 
-## Add _Imports.razor reference
+## Add reference in _Imports.razor
 
 `@using BlazorCurrentDevice`
 
-## Add the service
+## Add the service in your services method
 
 `services.AddBlazorCurrentDevice();`
 
-## Add Javascript lib reference
+## Add javascript librry reference in your index.html
 `<script src="_content/BlazorCurrentDevice/current-device.min.js"></script>`
 
 ## Usage
