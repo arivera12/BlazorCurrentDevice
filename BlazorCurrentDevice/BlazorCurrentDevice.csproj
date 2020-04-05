@@ -3,6 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
+    <Description>BlazorCurrentDevice is wrapper around current-device.js for blazor.</Description>
+    <PackageProjectUrl>https://github.com/arivera12/BlazorCurrentDevice</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/arivera12/BlazorCurrentDevice</RepositoryUrl>
+    <RepositoryType>C#</RepositoryType>
+    <PackageReleaseNotes>Added missing method Desktop. Fixed properties methods.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 

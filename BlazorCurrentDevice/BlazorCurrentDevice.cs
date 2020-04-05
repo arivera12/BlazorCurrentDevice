@@ -38,6 +38,10 @@ namespace BlazorCurrentDevice
         {
             return await JSRuntime.InvokeAsync<bool>("device.cordova");
         }
+        public async ValueTask<bool> Desktop()
+        {
+            return await JSRuntime.InvokeAsync<bool>("device.desktop");
+        }
         public async ValueTask<bool> FireFoxOs()
         {
             return await JSRuntime.InvokeAsync<bool>("device.fxos");
@@ -88,11 +92,11 @@ namespace BlazorCurrentDevice
         }
         public async ValueTask<string> Orientation()
         {
-            return await JSRuntime.InvokeAsync<string>("device.orientation");
+            return await JSRuntime.InvokeAsync<string>("eval", "device.orientation");
         }
         public async ValueTask<string> OS()
         {
-            return await JSRuntime.InvokeAsync<string>("device.os");
+            return await JSRuntime.InvokeAsync<string>("eval", "device.os");
         }
         public async ValueTask<bool> Portrait()
         {
@@ -108,7 +112,7 @@ namespace BlazorCurrentDevice
         }
         public async ValueTask<string> Type()
         {
-            return await JSRuntime.InvokeAsync<string>("device.type");
+            return await JSRuntime.InvokeAsync<string>("eval", "device.type");
         }
         public async ValueTask<bool> Windows()
         {
