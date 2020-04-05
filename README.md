@@ -1,8 +1,6 @@
 # BlazorCurrentDevice
 Device detection for blazor using current-device.js
 
-This is a wrapper around current-device.js
-
 ## Installation
 
 `Install-Package BlazorCurrentDevice -Version 1.0.2`
