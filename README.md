@@ -15,7 +15,7 @@ This is a wrapper around current-device.js
 
 `services.AddBlazorCurrentDevice();`
 
-## Add javascript librry reference in your index.html
+## Add javascript library reference in your index.html
 `<script src="_content/BlazorCurrentDevice/current-device.min.js"></script>`
 
 ## Usage
