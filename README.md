@@ -133,7 +133,7 @@ This is a wrapper around current-device.js
 <table>
 	<tr>
 		<th>Orientation</th>
-		<th>JavaScript Method</th>
+		<th>Method</th>
 	</tr>
 	<tr>
 		<td>Landscape</td>
