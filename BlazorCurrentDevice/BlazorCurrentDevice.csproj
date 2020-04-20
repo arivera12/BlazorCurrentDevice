@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -7,15 +7,28 @@
     <PackageProjectUrl>https://github.com/arivera12/BlazorCurrentDevice</PackageProjectUrl>
     <RepositoryUrl>https://github.com/arivera12/BlazorCurrentDevice</RepositoryUrl>
     <RepositoryType>C#</RepositoryType>
-    <PackageReleaseNotes>Renamed BlazorCurrentDeviceExtensions to ServiceCollectionExtensions.</PackageReleaseNotes>
+    <PackageReleaseNotes>Upgraded packages. Added license and license acceptance.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+    <Authors>Anthony G. Rivera Cosme</Authors>
+    <Company>Anthony G. Rivera Cosme</Company>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Anthony G. Rivera Cosme</Copyright>
   </PropertyGroup>
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="5.0.0-preview.2.20167.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.0-preview.2.20167.3" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="..\..\OneLine\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
