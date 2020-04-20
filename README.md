@@ -3,7 +3,7 @@ Device detection for blazor using current-device.js
 
 ## Installation
 
-`Install-Package BlazorCurrentDevice -Version 1.0.2`
+`Install-Package BlazorCurrentDevice -Version 1.0.3`
 
 ## Add reference in _Imports.razor
 
