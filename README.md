@@ -3,7 +3,7 @@ Device detection for blazor using current-device.js
 
 ## Installation
 
-`Install-Package BlazorCurrentDevice -Version 1.0.3`
+`Install-Package BlazorCurrentDevice -Version 1.0.4`
 
 ## Add reference in _Imports.razor
 
@@ -18,111 +18,111 @@ Device detection for blazor using current-device.js
 
 ## Usage
 `
-[Inject] BlazorCurrentDevice BlazorCurrentDevice { get; set; }
+[Inject] BlazorCurrentDeviceService BlazorCurrentDeviceService { get; set; }
 `
 
 #### Device Methods
 
 <table>
 	<tr>
-		<th>BlazorCurrentDevice</th>
+		<th>BlazorCurrentDeviceService</th>
 		<th>Method</th>
 	</tr>
 	<tr>
 		<td>Mobile</td>
-		<td>BlazorCurrentDevice.Mobile()</td>
+		<td>BlazorCurrentDeviceService.Mobile()</td>
 	</tr>
 	<tr>
 		<td>Tablet</td>
-		<td>BlazorCurrentDevice.Tablet()</td>
+		<td>BlazorCurrentDeviceService.Tablet()</td>
 	</tr>
 	<tr>
 		<td>Desktop</td>
-		<td>BlazorCurrentDevice.Desktop()</td>
+		<td>BlazorCurrentDeviceService.Desktop()</td>
 	</tr>
 	<tr>
 		<td>iOS</td>
-		<td>BlazorCurrentDevice.iOS()</td>
+		<td>BlazorCurrentDeviceService.iOS()</td>
 	</tr>
 	<tr>
 		<td>iPad</td>
-		<td>BlazorCurrentDevice.iPad()</td>
+		<td>BlazorCurrentDeviceService.iPad()</td>
 	</tr>
 	<tr>
 		<td>iPhone</td>
-		<td>BlazorCurrentDevice.iPhone()</td>
+		<td>BlazorCurrentDeviceService.iPhone()</td>
 	</tr>
 	<tr>
 		<td>iPod</td>
-		<td>BlazorCurrentDevice.iPod()</td>
+		<td>BlazorCurrentDeviceService.iPod()</td>
 	</tr>
 	<tr>
 		<td>Android</td>
-		<td>BlazorCurrentDevice.Android()</td>
+		<td>BlazorCurrentDeviceService.Android()</td>
 	</tr>
 	<tr>
 		<td>Android Phone</td>
-		<td>BlazorCurrentDevice.AndroidPhone()</td>
+		<td>BlazorCurrentDeviceService.AndroidPhone()</td>
 	</tr>
 	<tr>
 		<td>Android Tablet</td>
-		<td>BlazorCurrentDevice.AndroidTablet()</td>
+		<td>BlazorCurrentDeviceService.AndroidTablet()</td>
 	</tr>
 	<tr>
 		<td>BlackBerry</td>
-		<td>BlazorCurrentDevice.Blackberry()</td>
+		<td>BlazorCurrentDeviceService.Blackberry()</td>
 	</tr>
 	<tr>
 		<td>BlackBerry Phone</td>
-		<td>BlazorCurrentDevice.BlackberryPhone()</td>
+		<td>BlazorCurrentDeviceService.BlackberryPhone()</td>
 	</tr>
 	<tr>
 		<td>BlackBerry Tablet</td>
-		<td>BlazorCurrentDevice.BlackberryTablet()</td>
+		<td>BlazorCurrentDeviceService.BlackberryTablet()</td>
 	</tr>
 	<tr>
 		<td>Windows</td>
-		<td>BlazorCurrentDevice.Windows()</td>
+		<td>BlazorCurrentDeviceService.Windows()</td>
 	</tr>
 	<tr>
 		<td>Windows Phone</td>
-		<td>BlazorCurrentDevice.WindowsPhone()</td>
+		<td>BlazorCurrentDeviceService.WindowsPhone()</td>
 	</tr>
 	<tr>
 		<td>Windows Tablet</td>
-		<td>BlazorCurrentDevice.WindowsTablet()</td>
+		<td>BlazorCurrentDeviceService.WindowsTablet()</td>
 	</tr>
 	<tr>
 		<td>Firefox OS</td>
-		<td>BlazorCurrentDevice.FireFoxOs()</td>
+		<td>BlazorCurrentDeviceService.FireFoxOs()</td>
 	</tr>
 	<tr>
 		<td>Firefox OS Phone</td>
-		<td>BlazorCurrentDevice.FireFoxOsPhone()</td>
+		<td>BlazorCurrentDeviceService.FireFoxOsPhone()</td>
 	</tr>
 	<tr>
 		<td>Firefox OS Tablet</td>
-		<td>BlazorCurrentDevice.FireFoxOsTablet()</td>
+		<td>BlazorCurrentDeviceService.FireFoxOsTablet()</td>
 	</tr>
   <tr>
 		<td>MacOs</td>
-		<td>BlazorCurrentDevice.MacOs()</td>
+		<td>BlazorCurrentDeviceService.MacOs()</td>
 	</tr>
 	<tr>
 		<td>MeeGo</td>
-		<td>BlazorCurrentDevice.MeeGo()</td>
+		<td>BlazorCurrentDeviceService.MeeGo()</td>
 	</tr>
   <tr>
 		<td>NodeWebkit</td>
-		<td>BlazorCurrentDevice.NodeWebkit()</td>
+		<td>BlazorCurrentDeviceService.NodeWebkit()</td>
 	</tr>
    <tr>
 		<td>Cordova</td>
-		<td>BlazorCurrentDevice.Cordova()</td>
+		<td>BlazorCurrentDeviceService.Cordova()</td>
 	</tr>
 	<tr>
 		<td>Television</td>
-		<td>BlazorCurrentDevice.Television()</td>
+		<td>BlazorCurrentDeviceService.Television()</td>
 	</tr>
 </table>
 
@@ -135,11 +135,11 @@ Device detection for blazor using current-device.js
 	</tr>
 	<tr>
 		<td>Landscape</td>
-		<td>BlazorCurrentDevice.Landscape()</td>
+		<td>BlazorCurrentDeviceService.Landscape()</td>
 	</tr>
 	<tr>
 		<td>Portrait</td>
-		<td>BlazorCurrentDevice.Portrait()</td>
+		<td>BlazorCurrentDeviceService.Portrait()</td>
 	</tr>
 </table>
 
@@ -151,15 +151,15 @@ Device detection for blazor using current-device.js
 		<th>Returns</th>
 	</tr>
 	<tr>
-		<td>BlazorCurrentDevice.Type()</td>
+		<td>BlazorCurrentDeviceService.Type()</td>
 		<td>'mobile', 'tablet', 'desktop', or 'unknown'</td>
 	</tr>
 	<tr>
-		<td>BlazorCurrentDevice.Orientation()</td>
+		<td>BlazorCurrentDeviceService.Orientation()</td>
 		<td>'landscape', 'portrait', or 'unknown'</td>
 	</tr>
 	<tr>
-		<td>BlazorCurrentDevice.OS()</td>
+		<td>BlazorCurrentDeviceService.OS()</td>
 		<td>'ios', 'iphone', 'ipad', 'ipod', 'android', 'blackberry', 'windows', 'macos', 'fxos', 'meego', 'television', or 'unknown'</td>
 	</tr>
 </table>
