@@ -7,9 +7,9 @@
     <PackageProjectUrl>https://github.com/arivera12/BlazorCurrentDevice</PackageProjectUrl>
     <RepositoryUrl>https://github.com/arivera12/BlazorCurrentDevice</RepositoryUrl>
     <RepositoryType>C#</RepositoryType>
-    <PackageReleaseNotes>Upgraded packages. Added license and license acceptance.</PackageReleaseNotes>
+    <PackageReleaseNotes>Renamed BlazorCurrentDevice to BlazorCurrentDeviceService to prevent namespace name collision.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>Anthony G. Rivera Cosme</Authors>
     <Company>Anthony G. Rivera Cosme</Company>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>

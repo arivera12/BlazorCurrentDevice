@@ -10,7 +10,7 @@ namespace BlazorCurrentDevice
             return services.AddSingleton((service) =>
             {
                 var JSRuntime = service.GetRequiredService<IJSRuntime>();
-                return new BlazorCurrentDevice(JSRuntime);
+                return new BlazorCurrentDeviceService(JSRuntime);
             });
         }
     }
