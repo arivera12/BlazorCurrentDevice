@@ -1,5 +1,8 @@
 # BlazorCurrentDevice
+
 Device detection for blazor using current-device.js
+
+[![Nuget](https://buildstats.info/nuget/BlazorCurrentDevice?v=1.0.5)](https://www.nuget.org/packages/BlazorCurrentDevice)
 
 ## Installation
 
