@@ -3,128 +3,128 @@ using System.Threading.Tasks;
 
 namespace BlazorCurrentDevice
 {
-    public class BlazorCurrentDeviceService
+    internal class BlazorCurrentDeviceService : IBlazorCurrentDeviceService
     {
         protected IJSRuntime JSRuntime { get; set; }
         public BlazorCurrentDeviceService(IJSRuntime jSRuntime)
         {
             JSRuntime = jSRuntime;
         }
-        public async ValueTask<bool> Android()
+        public ValueTask<bool> Android()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.android");
+            return JSRuntime.InvokeAsync<bool>("device.android");
         }
-        public async ValueTask<bool> AndroidPhone()
+        public ValueTask<bool> AndroidPhone()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.androidPhone");
+            return JSRuntime.InvokeAsync<bool>("device.androidPhone");
         }
-        public async ValueTask<bool> AndroidTablet()
+        public ValueTask<bool> AndroidTablet()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.androidTablet");
+            return JSRuntime.InvokeAsync<bool>("device.androidTablet");
         }
-        public async ValueTask<bool> Blackberry()
+        public ValueTask<bool> Blackberry()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.blackberry");
+            return JSRuntime.InvokeAsync<bool>("device.blackberry");
         }
-        public async ValueTask<bool> BlackberryPhone()
+        public ValueTask<bool> BlackberryPhone()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.blackberryPhone");
+            return JSRuntime.InvokeAsync<bool>("device.blackberryPhone");
         }
-        public async ValueTask<bool> BlackberryTablet()
+        public ValueTask<bool> BlackberryTablet()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.blackberryTablet");
+            return JSRuntime.InvokeAsync<bool>("device.blackberryTablet");
         }
-        public async ValueTask<bool> Cordova()
+        public ValueTask<bool> Cordova()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.cordova");
+            return JSRuntime.InvokeAsync<bool>("device.cordova");
         }
-        public async ValueTask<bool> Desktop()
+        public ValueTask<bool> Desktop()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.desktop");
+            return JSRuntime.InvokeAsync<bool>("device.desktop");
         }
-        public async ValueTask<bool> FireFoxOs()
+        public ValueTask<bool> FireFoxOs()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.fxos");
+            return JSRuntime.InvokeAsync<bool>("device.fxos");
         }
-        public async ValueTask<bool> FireFoxOsPhone()
+        public ValueTask<bool> FireFoxOsPhone()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.fxosPhone");
+            return JSRuntime.InvokeAsync<bool>("device.fxosPhone");
         }
-        public async ValueTask<bool> FireFoxOsTablet()
+        public ValueTask<bool> FireFoxOsTablet()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.fxosTablet");
+            return JSRuntime.InvokeAsync<bool>("device.fxosTablet");
         }
-        public async ValueTask<bool> iOS()
+        public ValueTask<bool> iOS()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.ios");
+            return JSRuntime.InvokeAsync<bool>("device.ios");
         }
-        public async ValueTask<bool> iPad()
+        public ValueTask<bool> iPad()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.ipad");
+            return JSRuntime.InvokeAsync<bool>("device.ipad");
         }
-        public async ValueTask<bool> iPhone()
+        public ValueTask<bool> iPhone()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.iphone");
+            return JSRuntime.InvokeAsync<bool>("device.iphone");
         }
-        public async ValueTask<bool> iPod()
+        public ValueTask<bool> iPod()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.ipod");
+            return JSRuntime.InvokeAsync<bool>("device.ipod");
         }
-        public async ValueTask<bool> Landscape()
+        public ValueTask<bool> Landscape()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.landscape");
+            return JSRuntime.InvokeAsync<bool>("device.landscape");
         }
-        public async ValueTask<bool> MacOs()
+        public ValueTask<bool> MacOs()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.macos");
+            return JSRuntime.InvokeAsync<bool>("device.macos");
         }
-        public async ValueTask<bool> MeeGo()
+        public ValueTask<bool> MeeGo()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.meego");
+            return JSRuntime.InvokeAsync<bool>("device.meego");
         }
-        public async ValueTask<bool> Mobile()
+        public ValueTask<bool> Mobile()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.mobile");
+            return JSRuntime.InvokeAsync<bool>("device.mobile");
         }
-        public async ValueTask<bool> NodeWebkit()
+        public ValueTask<bool> NodeWebkit()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.mobile");
+            return JSRuntime.InvokeAsync<bool>("device.mobile");
         }
-        public async ValueTask<string> Orientation()
+        public ValueTask<string> Orientation()
         {
-            return await JSRuntime.InvokeAsync<string>("eval", "device.orientation");
+            return JSRuntime.InvokeAsync<string>("eval", "device.orientation");
         }
-        public async ValueTask<string> OS()
+        public ValueTask<string> OS()
         {
-            return await JSRuntime.InvokeAsync<string>("eval", "device.os");
+            return JSRuntime.InvokeAsync<string>("eval", "device.os");
         }
-        public async ValueTask<bool> Portrait()
+        public ValueTask<bool> Portrait()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.portrait");
+            return JSRuntime.InvokeAsync<bool>("device.portrait");
         }
-        public async ValueTask<bool> Tablet()
+        public ValueTask<bool> Tablet()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.tablet");
+            return JSRuntime.InvokeAsync<bool>("device.tablet");
         }
-        public async ValueTask<bool> Television()
+        public ValueTask<bool> Television()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.television");
+            return JSRuntime.InvokeAsync<bool>("device.television");
         }
-        public async ValueTask<string> Type()
+        public ValueTask<string> Type()
         {
-            return await JSRuntime.InvokeAsync<string>("eval", "device.type");
+            return JSRuntime.InvokeAsync<string>("eval", "device.type");
         }
-        public async ValueTask<bool> Windows()
+        public ValueTask<bool> Windows()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.windows");
+            return JSRuntime.InvokeAsync<bool>("device.windows");
         }
-        public async ValueTask<bool> WindowsPhone()
+        public ValueTask<bool> WindowsPhone()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.windowsPhone");
+            return JSRuntime.InvokeAsync<bool>("device.windowsPhone");
         }
-        public async ValueTask<bool> WindowsTablet()
+        public ValueTask<bool> WindowsTablet()
         {
-            return await JSRuntime.InvokeAsync<bool>("device.windowsTablet");
+            return JSRuntime.InvokeAsync<bool>("device.windowsTablet");
         }
     }
 }

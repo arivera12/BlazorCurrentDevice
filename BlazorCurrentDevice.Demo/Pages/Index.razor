@@ -1,0 +1,135 @@
+﻿@page "/"
+
+<h1>Blazor Current Device Demo</h1>
+
+<dl>
+    <dt class="@(Android ? "bg-success text-white" : "")">Android</dt>
+    <dd class="@(Android ? "bg-success text-white" : "")">@Android</dd>
+    <dt class="@(AndroidPhone ? "bg-success text-white" : "")">AndroidPhone</dt>
+    <dd class="@(AndroidPhone ? "bg-success text-white" : "")">@AndroidPhone</dd>
+    <dt class="@(AndroidTablet ? "bg-success text-white" : "")">AndroidTablet</dt>
+    <dd class="@(AndroidTablet ? "bg-success text-white" : "")">@AndroidTablet</dd>
+    <dt class="@(Blackberry ? "bg-success text-white" : "")">Blackberry</dt>
+    <dd class="@(Blackberry ? "bg-success text-white" : "")">@Blackberry</dd>
+    <dt class="@(BlackberryPhone ? "bg-success text-white" : "")">BlackberryPhone</dt>
+    <dd class="@(BlackberryPhone ? "bg-success text-white" : "")">@BlackberryPhone</dd>
+    <dt class="@(BlackberryTablet ? "bg-success text-white" : "")">BlackberryTablet</dt>
+    <dd class="@(BlackberryTablet ? "bg-success text-white" : "")">@BlackberryTablet</dd>
+    @*<dt class="@(Cordova ? "bg-success text-white" : "")">Cordova</dt>
+        <dd class="@(Cordova ? "bg-success text-white" : "")">@Cordova</dd>*@
+    <dt class="@(Desktop ? "bg-success text-white" : "")">Desktop</dt>
+    <dd class="@(Desktop ? "bg-success text-white" : "")">@Desktop</dd>
+    <dt class="@(FireFoxOs ? "bg-success text-white" : "")">FireFoxOs</dt>
+    <dd class="@(FireFoxOs ? "bg-success text-white" : "")">@FireFoxOs</dd>
+    <dt class="@(FireFoxOsPhone ? "bg-success text-white" : "")">FireFoxOsPhone</dt>
+    <dd class="@(FireFoxOsPhone ? "bg-success text-white" : "")">@FireFoxOsPhone</dd>
+    <dt class="@(FireFoxOsTablet ? "bg-success text-white" : "")">FireFoxOsTablet</dt>
+    <dd class="@(FireFoxOsTablet ? "bg-success text-white" : "")">@FireFoxOsTablet</dd>
+    <dt class="@(iOS ? "bg-success text-white" : "")">iOS</dt>
+    <dd class="@(iOS ? "bg-success text-white" : "")">@iOS</dd>
+    <dt class="@(iPad ? "bg-success text-white" : "")">iPad</dt>
+    <dd class="@(iPad ? "bg-success text-white" : "")">@iPad</dd>
+    <dt class="@(iPhone ? "bg-success text-white" : "")">iPhone</dt>
+    <dd class="@(iPhone ? "bg-success text-white" : "")">@iPhone</dd>
+    <dt class="@(iPod ? "bg-success text-white" : "")">iPod</dt>
+    <dd class="@(iPod ? "bg-success text-white" : "")">@iPod</dd>
+    <dt class="bg-info text-white">Landscape</dt>
+    <dd class="bg-info text-white">@Landscape</dd>
+    <dt class="@(MacOs ? "bg-success text-white" : "")">MacOs</dt>
+    <dd class="@(MacOs ? "bg-success text-white" : "")">@MacOs</dd>
+    <dt class="@(MeeGo ? "bg-success text-white" : "")">MeeGo</dt>
+    <dd class="@(MeeGo ? "bg-success text-white" : "")">@MeeGo</dd>
+    <dt class="@(Mobile ? "bg-success text-white" : "")">Mobile</dt>
+    <dd class="@(Mobile ? "bg-success text-white" : "")">@Mobile</dd>
+    <dt class="@(NodeWebkit ? "bg-success text-white" : "")">NodeWebkit</dt>
+    <dd class="@(NodeWebkit ? "bg-success text-white" : "")">@NodeWebkit</dd>
+    <dt class="bg-info text-white">Orientation</dt>
+    <dd class="bg-info text-white">@Orientation</dd>
+    <dt class="bg-info text-white">OS</dt>
+    <dd class="bg-info text-white">@OS</dd>
+    <dt class="bg-info text-white">Portrait</dt>
+    <dd class="bg-info text-white">@Portrait</dd>
+    <dt class="@(Tablet ? "bg-success text-white" : "")">Tablet</dt>
+    <dd class="@(Tablet ? "bg-success text-white" : "")">@Tablet</dd>
+    <dt class="@(Television ? "bg-success text-white" : "")">Television</dt>
+    <dd class="@(Television ? "bg-success text-white" : "")">@Television</dd>
+    <dt class="bg-info text-white">Type</dt>
+    <dd class="bg-info text-white">@Type</dd>
+    <dt class="@(Windows ? "bg-success text-white" : "")">Windows</dt>
+    <dd class="@(Windows ? "bg-success text-white" : "")">@Windows</dd>
+    <dt class="@(WindowsPhone ? "bg-success text-white" : "")">WindowsPhone</dt>
+    <dd class="@(WindowsPhone ? "bg-success text-white" : "")">@WindowsPhone</dd>
+    <dt class="@(WindowsTablet ? "bg-success text-white" : "")">WindowsTablet</dt>
+    <dd class="@(WindowsTablet ? "bg-success text-white" : "")">@WindowsTablet</dd>
+</dl>
+
+
+@code {
+    [Inject] IBlazorCurrentDeviceService BlazorCurrentDeviceService { get; set; }
+    bool Android { get; set; }
+    bool AndroidPhone { get; set; }
+    bool AndroidTablet { get; set; }
+    bool Blackberry { get; set; }
+    bool BlackberryPhone { get; set; }
+    bool BlackberryTablet { get; set; }
+    //bool Cordova { get; set; }
+    bool Desktop { get; set; }
+    bool FireFoxOs { get; set; }
+    bool FireFoxOsPhone { get; set; }
+    bool FireFoxOsTablet { get; set; }
+    bool iOS { get; set; }
+    bool iPad { get; set; }
+    bool iPhone { get; set; }
+    bool iPod { get; set; }
+    bool Landscape { get; set; }
+    bool MacOs { get; set; }
+    bool MeeGo { get; set; }
+    bool Mobile { get; set; }
+    bool NodeWebkit { get; set; }
+    string Orientation { get; set; }
+    string OS { get; set; }
+    bool Portrait { get; set; }
+    bool Tablet { get; set; }
+    bool Television { get; set; }
+    string Type { get; set; }
+    bool Windows { get; set; }
+    bool WindowsPhone { get; set; }
+    bool WindowsTablet { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender)
+        {
+            Android = await BlazorCurrentDeviceService.Android();
+            AndroidPhone = await BlazorCurrentDeviceService.AndroidPhone();
+            AndroidTablet = await BlazorCurrentDeviceService.AndroidTablet();
+            Blackberry = await BlazorCurrentDeviceService.Blackberry();
+            BlackberryPhone = await BlazorCurrentDeviceService.BlackberryPhone();
+            BlackberryTablet = await BlazorCurrentDeviceService.BlackberryTablet();
+            //Cordova = await BlazorCurrentDeviceService.Cordova();
+            Desktop = await BlazorCurrentDeviceService.Desktop();
+            FireFoxOs = await BlazorCurrentDeviceService.FireFoxOs();
+            FireFoxOsPhone = await BlazorCurrentDeviceService.FireFoxOsPhone();
+            FireFoxOsTablet = await BlazorCurrentDeviceService.FireFoxOsTablet();
+            iOS = await BlazorCurrentDeviceService.iOS();
+            iPad = await BlazorCurrentDeviceService.iPad();
+            iPhone = await BlazorCurrentDeviceService.iPhone();
+            iPod = await BlazorCurrentDeviceService.iPod();
+            Landscape = await BlazorCurrentDeviceService.Landscape();
+            MacOs = await BlazorCurrentDeviceService.MacOs();
+            MeeGo = await BlazorCurrentDeviceService.MeeGo();
+            Mobile = await BlazorCurrentDeviceService.Mobile();
+            NodeWebkit = await BlazorCurrentDeviceService.NodeWebkit();
+            Orientation = await BlazorCurrentDeviceService.Orientation();
+            OS = await BlazorCurrentDeviceService.OS();
+            Portrait = await BlazorCurrentDeviceService.Portrait();
+            Tablet = await BlazorCurrentDeviceService.Tablet();
+            Television = await BlazorCurrentDeviceService.Television();
+            Type = await BlazorCurrentDeviceService.Type();
+            Windows = await BlazorCurrentDeviceService.Windows();
+            WindowsPhone = await BlazorCurrentDeviceService.WindowsPhone();
+            WindowsTablet = await BlazorCurrentDeviceService.WindowsTablet();
+            StateHasChanged();
+        }
+    }
+}
