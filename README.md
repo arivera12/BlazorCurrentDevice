@@ -6,7 +6,7 @@ Device detection for blazor using current-device.js
 
 ## Installation
 
-`Install-Package BlazorCurrentDevice -Version 1.0.5`
+`Install-Package BlazorCurrentDevice -Version 1.0.6`
 
 ## Add reference in _Imports.razor
 
@@ -21,7 +21,7 @@ Device detection for blazor using current-device.js
 
 ## Usage
 `
-[Inject] BlazorCurrentDeviceService BlazorCurrentDeviceService { get; set; }
+[Inject] IBlazorCurrentDeviceService BlazorCurrentDeviceService { get; set; }
 `
 
 #### Device Methods
