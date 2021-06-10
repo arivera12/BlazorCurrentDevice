@@ -2,7 +2,7 @@
 
 <p>
     	<a href="https://www.nuget.org/packages/BlazorCurrentDevice">
-	    <img src="https://buildstats.info/nuget/BlazorCurrentDevice?v=1.0.6" />
+	    <img src="https://buildstats.info/nuget/BlazorCurrentDevice?v=1.0.7" />
 	</a>
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RSE2NMEG3F7QU&source=url">
 	    <img src="https://img.shields.io/badge/Donate-PayPal-green.svg" />
@@ -15,7 +15,7 @@ Device detection for blazor using current-device.js
 
 ## Installation
 
-`Install-Package BlazorCurrentDevice -Version 1.0.6`
+`Install-Package BlazorCurrentDevice -Version 1.0.7`
 
 ## Add reference in _Imports.razor
 
