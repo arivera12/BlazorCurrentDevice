@@ -14,7 +14,7 @@ Device detection for blazor using current-device.js
 
 `Install-Package BlazorCurrentDevice -Version 1.0.7`
 
-## Add reference in _Imports.razor
+## Add reference in \_Imports.razor
 
 `@using BlazorCurrentDevice`
 
@@ -22,13 +22,18 @@ Device detection for blazor using current-device.js
 
 `services.AddBlazorCurrentDevice();`
 
-## Add javascript library reference in your index.html
+## Add javascript library reference in your index.html or \_Host.cshtml
+
 `<script src="_content/BlazorCurrentDevice/current-device.min.js"></script>`
 
 ## Usage
-`
-[Inject] IBlazorCurrentDeviceService BlazorCurrentDeviceService { get; set; }
-`
+
+`[Inject] IBlazorCurrentDeviceService BlazorCurrentDeviceService { get; set; }`
+or
+
+```cs
+@inject IBlazorCurrentDeviceService BlazorCurrentDeviceService
+```
 
 #### Device Methods
 
@@ -174,7 +179,9 @@ Device detection for blazor using current-device.js
 </table>
 
 ## TODO
+
 - Implement onChangeOrientation callback
 
 ## License
+
 MIT
